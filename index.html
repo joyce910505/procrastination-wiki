@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="用生活案例、心理學研究與互動工具，理解拖延並建立第一個具體行動。">
+  <title>為什麼我們總是拖延？——從心理學到改善方法</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#slide-stage">跳到簡報內容</a>
+  <header class="topbar" aria-label="簡報控制列">
+    <a class="brand" href="#slide-1" aria-label="回到封面"><span class="brand-mark" aria-hidden="true">▣</span>拖延百寶袋</a>
+    <div class="progress-wrap" aria-label="簡報進度"><span id="progress-label">第 1 頁，共 10 頁</span><div class="progress-track"><span id="progress-bar"></span></div></div>
+    <button class="icon-button" id="open-menu" type="button" aria-expanded="false" aria-controls="slide-menu">選頁</button>
+  </header>
+
+  <nav class="slide-menu" id="slide-menu" aria-label="投影片目錄" hidden>
+    <p>前往指定頁面</p>
+    <ol>
+      <li><button data-go="1">封面</button></li><li><button data-go="2">生活情境</button></li>
+      <li><button data-go="3">拖延定義</button></li><li><button data-go="4">相關因素</button></li>
+      <li><button data-go="5">心理循環</button></li><li><button data-go="6">跨出第一步</button></li>
+      <li><button data-go="7">番茄鐘研究</button></li><li><button data-go="8">壓力與自我同情</button></li>
+      <li><button data-go="9">行動百寶袋</button></li><li><button data-go="10">今天的第一步</button></li>
+    </ol>
+  </nav>
+
+  <main id="slide-stage" class="slide-stage" tabindex="-1">
+    <section class="slide cover active" id="slide-1" data-slide="1" aria-labelledby="title-1">
+      <div class="cover-copy">
+        <p class="eyebrow">拖延百寶袋 · 心理學入門</p>
+        <h1 id="title-1">為什麼我們<br>總是拖延？</h1>
+        <p class="lead">從心理學到改善方法</p>
+        <p class="intro">打開百寶袋，看看卡住我們的是什麼，哪些工具值得試試。</p>
+        <button class="primary" data-go="2">打開百寶袋 <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+        <div class="toolbox"><div class="handle"></div><div class="toolbox-lid"></div><div class="toolbox-body"><span class="latch"></span></div>
+          <div class="tool clock-tool">◷</div><div class="tool note-tool">IF<br>THEN</div><div class="tool heart-tool">♡</div><div class="tool pencil-tool"></div>
+        </div>
+      </div>
+      <details class="sources"><summary>本頁定位</summary><p>敘事入口，沒有研究效果主張。完整來源自第 2 頁起逐頁列出。</p></details>
+    </section>
+
+    <section class="slide" id="slide-2" data-slide="2" aria-labelledby="title-2">
+      <div class="slide-heading"><p class="eyebrow">先從生活開始</p><h2 id="title-2">你也有過這些時刻嗎？</h2><p>選一個情境，看看它是否符合研究中的拖延定義。</p></div>
+      <div class="scenario-grid" role="group" aria-label="生活情境選擇">
+        <button class="scenario-card" data-scenario="delay"><span class="scene-icon" aria-hidden="true">▤</span><strong>先滑一下手機</strong><span>明知明天會更趕，仍把原本今晚要做的報告往後延。</span></button>
+        <button class="scenario-card" data-scenario="wait"><span class="scene-icon" aria-hidden="true">?</span><strong>等待必要資訊</strong><span>老師明天才會公布必要格式，所以先等資訊完整。</span></button>
+        <button class="scenario-card" data-scenario="priority"><span class="scene-icon" aria-hidden="true">✓</span><strong>調整工作順序</strong><span>先處理今天到期的作業，再做下週的報告。</span></button>
+      </div>
+      <div id="scenario-result" class="result-panel" aria-live="polite"><p>請選擇一張情境卡。</p></div>
+      <div class="legend-row"><span class="badge evidence">研究發現</span><span>判斷重點來自拖延的研究定義，不是人格診斷。</span></div>
+      <details class="sources"><summary>研究證據與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/01-what-is-procrastination.md">第 1 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-001">CLM-001</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-001">SRC-001</a></p><p>生活案例用來套用定義，不代表僅憑單一行為就能診斷一個人。</p></details>
+    </section>
+
+    <section class="slide" id="slide-3" data-slide="3" aria-labelledby="title-3">
+      <div class="slide-heading"><p class="eyebrow">工具 01 · 辨識</p><h2 id="title-3">什麼才算拖延？</h2><p class="big-quote">自願延後原本打算採取的行動，即使預期延後會讓自己處境更糟。</p></div>
+      <div class="definition-parts">
+        <article><span>1</span><h3>原本有意圖</h3><p>已經打算開始或完成某項行動。</p></article>
+        <article><span>2</span><h3>自願延後</h3><p>後來把原本的行動往後移。</p></article>
+        <article><span>3</span><h3>預期代價</h3><p>知道延後可能讓結果變得更糟。</p></article>
+      </div>
+      <aside class="note"><strong>不是所有「晚點做」都叫拖延。</strong>等待必要資訊、合理排序或策略性延後，未必符合完整定義。</aside>
+      <div class="legend-row"><span class="badge evidence">研究發現</span><span>這是概念定義；Wiki 尚無「懶惰」的研究定義，不能直接比較兩者。</span></div>
+      <details class="sources"><summary>研究證據與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/01-what-is-procrastination.md">第 1 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-001">CLM-001</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-002">CLM-002</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-001">SRC-001</a></p><p>SRC-001 主要整合相關研究；概念定義不等於特定治療效果。</p></details>
+    </section>
+
+    <section class="slide" id="slide-4" data-slide="4" aria-labelledby="title-4">
+      <div class="slide-heading"><p class="eyebrow">工具 02 · 看懂卡點</p><h2 id="title-4">明知道重要，為什麼還是不想做？</h2><p>「重要」只是其中一部分；眼前感受與立即誘惑也可能參與其中。</p></div>
+      <div class="factor-board">
+        <article><span class="factor-icon">≋</span><h3>任務厭惡</h3><p>覺得無聊、困難或不舒服</p><b>r̄ = .40</b></article>
+        <article><span class="factor-icon">?</span><h3>較低自我效能</h3><p>不太相信自己做得到</p><b>r̄ = −.38</b></article>
+        <article><span class="factor-icon">⚡</span><h3>衝動性</h3><p>眼前選項更容易拉走注意</p><b>r̄ = .41</b></article>
+        <article><span class="factor-icon">↗</span><h3>易分心</h3><p>很容易轉向別的刺激</p><b>r̄ = .45</b></article>
+        <article><span class="factor-icon">⇥</span><h3>意圖—行動落差</h3><p>想做與真的去做有距離</p><b>r̄ = .29</b></article>
+      </div>
+      <div class="two-callouts"><div><span class="badge theory">理論解釋</span><p>不舒服的任務可能讓現在的自己先轉向能立即舒緩的活動。</p></div><div><strong>迷思：完美主義一定拖延？</strong><p>整體平均相關接近零（r̄ = −.03）；不同構面仍可能不同。</p></div></div>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/02-why-we-procrastinate.md">第 2 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-003">CLM-003–009、011、012、019</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-001">SRC-001</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-002">SRC-002</a></p><p>以上多為相關結果，不能解讀為單一因素造成拖延。短期情緒修復是理論解釋，也不是所有拖延的唯一原因。</p></details>
+    </section>
+
+    <section class="slide" id="slide-5" data-slide="5" aria-labelledby="title-5">
+      <div class="slide-heading"><p class="eyebrow">工具 03 · 看見循環</p><h2 id="title-5">拖延的心理循環</h2><p>點選任一節點，探索「現在好受一點」如何可能把成本留給未來。</p></div>
+      <div class="cycle-layout">
+        <div class="cycle" aria-label="拖延心理循環六個節點">
+          <button class="cycle-node active" data-cycle="0"><span>1</span>任務不舒服</button>
+          <button class="cycle-node" data-cycle="1"><span>2</span>逃開任務</button>
+          <button class="cycle-node" data-cycle="2"><span>3</span>短期舒緩</button>
+          <button class="cycle-node" data-cycle="3"><span>4</span>留給未來</button>
+          <button class="cycle-node" data-cycle="4"><span>5</span>壓力／自責</button>
+          <button class="cycle-node" data-cycle="5"><span>6</span>再次逃避？</button>
+        </div>
+        <article id="cycle-detail" class="cycle-detail" aria-live="polite"></article>
+      </div>
+      <aside class="warning"><span class="badge theory">理論解釋</span><strong>這是跨研究整理的教學模型，並非單一研究完整證實的固定因果鏈。</strong></aside>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/03-procrastination-cycle.md">第 3 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-012">CLM-012–020、023、025、026</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-002">SRC-002</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-003">SRC-003</a></p><p>SRC-002 是理論觀點及二手整理；SRC-003 的統計間接效果不是因果中介，且成人樣本控制基線壓力後不顯著。</p></details>
+    </section>
+
+    <section class="slide" id="slide-6" data-slide="6" aria-labelledby="title-6">
+      <div class="slide-heading"><p class="eyebrow">工具 04 · 指定第一步</p><h2 id="title-6">如何跨出第一步？</h2><p>把模糊的「我要做」加工成可辨識線索＋具體行動。</p></div>
+      <div class="plan-demo"><div><small>Goal intention</small><p>「我要開始寫報告。」</p></div><span aria-hidden="true">→</span><div><small>Implementation intention</small><p>「如果晚餐後我把杯子放進水槽，那麼我就打開報告檔。」</p></div></div>
+      <form id="plan-form" class="plan-builder">
+        <label>如果……<input id="if-input" name="if" maxlength="90" placeholder="例如：晚餐後把杯子放進水槽" autocomplete="off"></label>
+        <label>那麼我就……<input id="then-input" name="then" maxlength="90" placeholder="例如：坐到書桌前打開報告檔" autocomplete="off"></label>
+        <button class="primary" type="submit">產生我的行動卡</button>
+        <p class="privacy-note">只保存在這台裝置的瀏覽器中，不會傳送到外部服務。可隨時清除。</p>
+      </form>
+      <div id="plan-card" class="action-card" aria-live="polite" hidden></div>
+      <div class="legend-row"><span class="badge try">可以試試</span><span>一般目標研究有支持，但不是拖延專屬治療，也不是五分鐘開始法的療效證據。</span></div>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/04-getting-started.md">第 4 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-029">CLM-029–036</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-004">SRC-004</a></p><p>一般目標達成整體 d=.65，95% CI [.60,.70]；開始目標追求 d=.61，95% CI [.56,.67]。效果異質，且本文未直接統合拖延改善。</p></details>
+    </section>
+
+    <section class="slide" id="slide-7" data-slide="7" aria-labelledby="title-7">
+      <div class="slide-heading"><p class="eyebrow">工具 05 · 安排休息</p><h2 id="title-7">番茄鐘真的比較有效嗎？</h2><p class="answer-pill">目前沒有明確優勝者</p></div>
+      <div class="break-tabs" role="tablist" aria-label="三種休息方法">
+        <button role="tab" aria-selected="true" data-break="self">自主休息</button><button role="tab" aria-selected="false" data-break="pomo">Pomodoro</button><button role="tab" aria-selected="false" data-break="flow">Flowtime</button>
+      </div>
+      <div id="break-detail" class="break-detail" role="tabpanel"></div>
+      <div class="outcome-grid"><article><strong>知覺生產力</strong><span>無顯著組間差異</span></article><article><strong>任務完成率</strong><span>p = .854</span></article><article><strong>心流</strong><span>p = .774</span></article></div>
+      <aside class="warning"><span class="badge evidence">研究發現</span><p>兩小時、N=94 的學生研究；生產力是主觀感受，且沒有測量拖延。<strong>不顯著不等於完全等效。</strong></p></aside>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/05-maintaining-focus.md">第 5 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-045">CLM-045–052</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-006">SRC-006</a></p><p>整體動機與疲勞也無顯著組間差異；部分時間交互作用顯著，但 Bonferroni 調整後比較並非全部顯著。樣本 93% 為女性心理學學生。</p></details>
+    </section>
+
+    <section class="slide" id="slide-8" data-slide="8" aria-labelledby="title-8">
+      <div class="slide-heading"><p class="eyebrow">工具 06 · 少一點自責</p><h2 id="title-8">拖延、壓力與自我同情</h2><p>它們彼此相關，但箭頭方向不能由這些資料決定。</p></div>
+      <div class="relation-map" aria-label="三項變數的相關">
+        <div class="relation-node procrastination">拖延</div><button class="relation-line line-a" data-relation="a">ρ = −.31</button>
+        <div class="relation-node compassion">自我同情</div><button class="relation-line line-b" data-relation="b">ρ = −.61</button>
+        <div class="relation-node stress">知覺壓力</div><button class="relation-line line-c" data-relation="c">ρ = .34</button>
+      </div>
+      <div id="relation-detail" class="result-panel" aria-live="polite"><p>點選一條關聯線查看解讀。</p></div>
+      <div class="compassion-card"><span class="badge try">可以試試</span><p><del>「我怎麼總是這麼糟。」</del><br><strong>「這次確實延後了；我可以看清發生了什麼，不必先羞辱自己。」</strong></p><small>概念示例，不是已證實能減少拖延的介入。</small></div>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/06-long-term-improvement.md">第 6 章</a>　<strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-021">CLM-021–028</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-003">SRC-003</a></p><p>三個樣本為橫斷資料；成人樣本控制基線壓力後，間接效果不顯著。本文沒有操弄自我同情，也沒有測試其拖延療效。</p></details>
+    </section>
+
+    <section class="slide" id="slide-9" data-slide="9" aria-labelledby="title-9">
+      <div class="slide-heading"><p class="eyebrow">組裝你的工具箱</p><h2 id="title-9">打造自己的行動百寶袋</h2><p>沒有神奇工具；先看卡點，再看證據層級。</p></div>
+      <div class="tool-choice" role="group" aria-label="選擇目前卡點">
+        <button data-tool="observe">我不懂為何卡住</button><button data-tool="start">我很難開始</button><button data-tool="focus">我想安排休息</button><button data-tool="kind">我一直責怪自己</button>
+      </div>
+      <article id="tool-result" class="tool-result" aria-live="polite"><p>選擇你現在最接近的狀況。</p></article>
+      <div class="evidence-summary"><span class="badge evidence">研究發現</span><p>直接針對拖延的多種心理介入，在介入後平均呈小幅效果（g=.34），但研究差異大、偏誤風險存在，且缺乏足夠長期追蹤。</p></div>
+      <aside class="note"><strong>重要界線：</strong>整體介入效果不能歸給任務拆解、五分鐘開始法或番茄鐘等單一技巧。</aside>
+      <details class="sources"><summary>研究證據、限制與來源</summary><p><strong>Wiki：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/04-getting-started.md">第 4 章</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/05-maintaining-focus.md">第 5 章</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/06-long-term-improvement.md">第 6 章</a></p><p><strong>主張：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/claims-register.md#clm-028">CLM-028、031、035、036、038–044、050–052</a>　<strong>來源：</strong><a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-003">SRC-003</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-004">SRC-004</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-005">SRC-005</a>、<a href="https://github.com/joyce910505/procrastination-wiki/blob/main/wiki/references.md#src-006">SRC-006</a>。完整 CBT 模型未達顯著；介入後平均效果不代表長期或單一技巧效果。</p></details>
+    </section>
+
+    <section class="slide finale" id="slide-10" data-slide="10" aria-labelledby="title-10">
+      <div class="slide-heading"><p class="eyebrow">帶一件工具回去</p><h2 id="title-10">今天的第一步，不必很大</h2></div>
+      <div class="takeaways"><article><span>1</span><p>拖延不只是做得晚；它涉及原本意圖、延後與預期代價。</p></article><article><span>2</span><p>任務感受、立即誘惑、情緒與自我調節都可能參與，但沒有單一原因。</p></article><article><span>3</span><p>工具不是魔法。選一個可行行動，再觀察結果。</p></article></div>
+      <div class="final-card"><p class="card-label">我的 If–Then 行動卡</p><blockquote id="final-plan">如果＿＿＿＿出現，那麼我就＿＿＿＿。</blockquote><div><button class="secondary" id="copy-final" type="button">複製行動卡</button><button class="text-button" id="clear-plan" type="button">清除並重設</button></div><p id="copy-status" class="sr-status" aria-live="polite"></p></div>
+      <aside class="warning"><span class="badge try">可以試試</span><p>這是依一般目標研究整理的行動提示，不代表五分鐘開始法、任務拆解或任何單一技巧已被證實能改善拖延。</p></aside>
+      <details class="sources"><summary>研究證據與來源</summary><p><strong>Wiki：</strong>第 1、2、4、6 章　<strong>主張：</strong>CLM-001、011、029、035、036、044　<strong>來源：</strong>SRC-001、004、005</p></details>
+    </section>
+  </main>
+
+  <footer class="nav-controls" aria-label="投影片導覽">
+    <button id="prev-slide" type="button"><span aria-hidden="true">←</span> 上一頁</button>
+    <div class="dot-nav" id="dot-nav" aria-label="快速切換投影片"></div>
+    <button id="next-slide" type="button">下一頁 <span aria-hidden="true">→</span></button>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
